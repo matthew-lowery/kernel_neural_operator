@@ -2,14 +2,15 @@
 This paper introduces the Kernel Neural Operator (KNO), a provably convergent operator-learning architecture that utilizes compositions of deep kernel-based integral operators for function-space approximation of operators (maps from functions to functions). The KNO decouples the choice of kernel from the numerical integration scheme (quadrature), thereby naturally allowing for operator learning with explicitly-chosen trainable kernels on irregular geometries. On irregular domains, this allows the KNO to utilize domain-specific quadrature rules. To help ameliorate the curse of dimensionality, we also leverage an efficient dimension-wise factorization algorithm on regular domains. More importantly, the ability to explicitly specify kernels also allows the use of highly expressive, non-stationary, neural anisotropic kernels whose parameters are computed by training neural networks. Numerical results demonstrate that on existing benchmarks the training and test accuracy of KNOs is comparable to or higher than popular operator learning techniques while typically using an order of magnitude fewer trainable parameters, with the more expressive kernels proving important to attaining high accuracy. KNOs thus facilitate low-memory, geometrically-flexible, deep operator learning, while retaining the implementation simplicity and transparency of traditional kernel methods from both scientific computing and machine learning.
 
 ```
-@misc{lowery2025kernelneuraloperatorsknos,
-      title={Kernel Neural Operators (KNOs) for Scalable, Memory-efficient, Geometrically-flexible Operator Learning}, 
-      author={Matthew Lowery and John Turnage and Zachary Morrow and John D. Jakeman and Akil Narayan and Shandian Zhe and Varun Shankar},
-      year={2025},
-      eprint={2407.00809},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2407.00809}, 
+@article{
+lowery2026kernel,
+title={Kernel Neural Operators ({KNO}s) for Scalable, Memory-efficient, Geometrically-flexible Operator Learning},
+author={Matthew Lowery and John Turnage and Zachary Morrow and John Davis Jakeman and Akil Narayan and Shandian Zhe and Varun Shankar},
+journal={Transactions on Machine Learning Research},
+issn={2835-8856},
+year={2026},
+url={https://openreview.net/forum?id=Q0C4jYZQ7x},
+note={}
 }
 ```
 ### Code instructions
